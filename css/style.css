@@ -1,0 +1,439 @@
+:root {
+    --color_primario: #1C9DB3;
+    --color_primario_suave: #2F455C;
+    --color_font2: #124E73;
+    --color_secundario: #D32F2F;
+    --color_font: #fff;
+    --color_verde: #0B3022;
+    --color_amarillo: #FDB00B;
+    --color_iconos: #F57C00;
+    --altura_header: 80px;
+    --padding_left_right: 2rem;
+    --ancho_maximo: 1200px;
+    --backgroundButtons: #325F7B;
+    --fontServicios: #2B4150
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--color_font);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.header {
+    height: var(--altura_header);
+    background-image: url('../images/backgroundWeb.jpg');
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 var(--padding_left_right);
+}
+
+.menu_hamburguesa {
+    display: none;
+}
+
+.menu_hamburguesa:checked+.ul_links {
+    height: calc(100vh - var(--altura_header));
+}
+
+.logo {
+    color: var(--color_blanco);
+}
+
+.labe_hamburguesa {
+    color: var(--color_font);
+}
+
+.list_icon {
+    color: var(--color_font);
+    cursor: pointer;
+}
+
+.ul_links {
+    width: 100%;
+    /* background-color: var(--color_primario_suave); */
+    background-image: url('../images/backgroundWeb.jpg');
+    position: absolute;
+    top: var(--altura_header);
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    gap: 3rem;
+    transition: all .3s;
+
+}
+
+#liInicio {
+    margin-top: 3rem;
+
+}
+
+.li_links {}
+
+.link {
+    font-size: 1.5rem;
+    color: var(--color_font);
+    font-weight: bold;
+
+}
+
+.logoNavbar {
+    border-radius: 50%;
+    height: 40px
+}
+
+
+/* Footer  */
+
+.contenedorFooter {
+    background-image: url('../images/backgroundWeb.jpg');
+
+}
+
+.copy {
+    background-color: #212121;
+    color: var(--color_font);
+    text-align: center;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    display: grid;
+    padding: 0 var(--padding_left_right);
+    overflow: hidden;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    padding-bottom: 1rem;
+    color: var(--color_font);
+}
+
+.info h3 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.info p {
+    text-align: justify;
+    hyphens: auto;
+}
+
+.footerContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    padding-bottom: 1rem;
+    color: var(--color_font);
+}
+
+.footerContacto h3 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.footerContacto ul {
+    text-align: center;
+}
+
+.footerContacto li {
+    list-style-type: none;
+}
+
+.footerContacto li a {
+    text-decoration: none;
+    color: var(--color_font);
+}
+
+li a:hover {
+    color: #00ffff; /* Cambia a un color llamativo */
+    text-decoration: underline; /* Agrega subrayado */
+    transition: color 0.3s, text-decoration 0.3s; /* Transición suave */
+}
+
+.ubicacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    padding-bottom: 1rem;
+    color: var(--color_font);
+}
+
+.ubicacion h3 {
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.ubicacion ul{
+    text-align: center;
+    
+}
+
+.ubicacion ul li a{
+    color: var(--color_font);
+}
+
+.ubicacion ul li a i{
+    color: var(--color_font);
+}
+
+.soloEnMobile {
+    width: 100%;
+    border: 1px dotted var(--color_font);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* fin footer  */
+
+/* boton whatsapp  */
+.whatsapp-button {
+    position: fixed;  /* Fijo en la pantalla */
+    bottom: 20px;     /* A 20px de la parte inferior */
+    right: 20px;      /* A 20px del borde derecho */
+    z-index: 100;     /* Se asegura de estar en el frente */
+    display: flex;    /* Centra el contenido dentro del botón */
+    justify-content: center;
+    align-items: center;
+    background-color: #25D366;  /* Color verde de WhatsApp */
+    border-radius: 50%;         
+    width: 60px;                /* Ancho del botón */
+    height: 60px;               /* Altura del botón */
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease;  /* Animación al pasar el cursor */
+}
+
+/* Tamaño del icono */
+.whatsapp-button i {
+   font-size: 40px;
+   color: #fff;
+}
+
+.whatsapp-button:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+}
+
+/* fin whatsapp  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* •---------------------RESPONSIVE MOBILE FRIST---------------------• */
+
+
+@media (min-width:768px) {
+    #liInicio {
+        margin-top: 0;
+    }
+
+    /* navbar */
+    .labe_hamburguesa {
+        display: none;
+    }
+
+    .ul_links {
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+        background: none;
+    }
+  
+
+    .link {
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+
+    .link:hover {
+        color: #C2163E;
+    }
+
+    /* footer  */
+    footer {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    /* portada  */
+
+    .tituloPortada {
+        padding-left: 4rem;
+    }
+
+    .tituloPortada h1 {
+        font-size: 2.5rem;
+    }
+
+    /* propuesta valor  */
+
+    .propuestaDeValor {
+        padding: 0 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .propuestaDeValor h2 {
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .conGenvalores {}
+
+    .valores {
+        margin-bottom: 0.5rem;
+    }
+
+    .valores h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+        text-align: left;
+    }
+
+    .valores p {
+        text-align: left;
+    }
+
+    /* servicios  */
+
+    .seccionServicios {
+        padding: 0 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .contenedorGeneralServicios {}
+
+    .contenedorGeneralServicios h2 {
+        font-size: 2rem;
+    }
+
+    .contenedorServicios {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* testimoniales  */
+    .sectionTestimoniales {
+        padding: 0 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .contenedorGeneralTestimoniales {}
+
+    .contenedorGeneralTestimoniales h2 {
+        font-size: 2rem;
+    }
+
+    .contenedorTestimoniales {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .testimoniales {
+        max-width: 80%;
+    }
+
+    /* contacto  */
+
+    .contenedorGeneralContacto {
+        padding: 0 4rem;
+        padding-top: 1rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .contacto h2 {
+        font-size: 2rem;
+    }
+
+    .contacto ul li {
+        display: flex;
+        font-size: 1.3rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    * {
+        font-size: 18px;
+    }
+
+    .soloEnMobile {
+        display: none;
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+   
+
+
+
+}
+
+@media (min-width: 1200px) {
+    
+
+}
+
+@media (min-width: 1600px) {
+    
+    *{
+        font-size: 24px;
+    }
+    
+    /* portada  */
+
+}

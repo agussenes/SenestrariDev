@@ -1,0 +1,24 @@
+/* Mobile large: 576px - 767px */
+@media (min-width: 576px) {
+  /* Estilos para móviles grandes */
+}
+
+/* Tablets: 768px - 991px */
+@media (min-width: 768px) {
+  /* Estilos para tablets */
+}
+
+/* Notebooks / laptops pequeñas: 992px - 1199px */
+@media (min-width: 992px) {
+  /* Estilos para laptops pequeñas */
+}
+
+/* PCs estándar / Laptops grandes: 1200px - 1599px */
+@media (min-width: 1200px) {
+  /* Estilos para PC de escritorio estándar */
+}
+
+/* PCs grandes / monitores ultra-wide: 1600px en adelante */
+@media (min-width: 1600px) {
+  /* Estilos para pantallas grandes o ultra-widescreen */
+}
