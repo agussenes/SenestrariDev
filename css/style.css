@@ -55,7 +55,8 @@ ul {
     align-items: center;
     flex-wrap: wrap;
     padding: 0 var(--padding_left_right);
-    border-bottom: 1px solid var(--color_font);
+    border-bottom: 1px solid #1C9DB3;
+    box-shadow: 0 4px 15px rgba(0, 255, 221, 0.3); /* Sombra suave */
 }
 
 .menu_hamburguesa {
@@ -139,7 +140,8 @@ footer {
     overflow: hidden;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
-    border-top: 1px solid var(--color_font);
+    border-top: 1px solid #1C9DB3;
+    box-shadow: 0 4px 15px rgba(0, 255, 221, 0.3); /* Sombra suave */
 }
 
 .info {
