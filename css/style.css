@@ -120,11 +120,6 @@ ul {
 
 /* Footer  */
 
-.contenedorFooter {
-    /* background-image: url('../images/backgroundWeb.jpg'); */
-
-}
-
 .copy {
     background-color: #212121;
     color: var(--color_font);
@@ -235,27 +230,18 @@ li a:hover {
 /* boton whatsapp  */
 .whatsapp-button {
     position: fixed;
-    /* Fijo en la pantalla */
     bottom: 20px;
-    /* A 20px de la parte inferior */
     right: 20px;
-    /* A 20px del borde derecho */
     z-index: 100;
-    /* Se asegura de estar en el frente */
     display: flex;
-    /* Centra el contenido dentro del botón */
     justify-content: center;
     align-items: center;
     background-color: #25D366;
-    /* Color verde de WhatsApp */
     border-radius: 50%;
     width: 60px;
-    /* Ancho del botón */
     height: 60px;
-    /* Altura del botón */
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
-    /* Animación al pasar el cursor */
 }
 
 /* Tamaño del icono */
@@ -286,7 +272,9 @@ li a:hover {
 .contenedorPortada{}
 
 .contenedorTxt{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .contenedorTxt h1{
@@ -445,7 +433,14 @@ li a:hover {
 
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+
+    /* protada  */
+    .contenedorTxt h1{
+        text-align: left;
+        font-size: 40px;
+    }
+}
 
 @media (min-width: 1600px) {
 
