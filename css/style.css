@@ -11,9 +11,9 @@
     --padding_left_right: 2rem;
     --padinTopBottonMobile: 25px;
     --padinTopBottonTablet: 35px;
-    --padinTopBottonPc: 50px;
+    --padinTopBottonPc: 5rem;
     --padingLeftAndRightTablet: 70px;
-    --padingLeftAndRightPc: 250px;
+    --padingLeftAndRightPc: 8rem;
     --ancho_maximo: 1200px;
     --backgroundButtons: #325F7B;
     --fontServicios: #2B4150
@@ -45,7 +45,7 @@ ul {
 
 .header {
     height: var(--altura_header);
-    /* background-image: url('../images/backgroundWeb.jpg'); */
+
 }
 
 .navbar {
@@ -56,7 +56,8 @@ ul {
     flex-wrap: wrap;
     padding: 0 var(--padding_left_right);
     border-bottom: 1px solid #1C9DB3;
-    box-shadow: 0 4px 15px rgba(0, 255, 221, 0.3); /* Sombra suave */
+    box-shadow: 0 4px 15px rgba(0, 255, 221, 0.3);
+
 }
 
 .menu_hamburguesa {
@@ -82,7 +83,6 @@ ul {
 
 .ul_links {
     width: 100%;
-    /* background-color: var(--color_primario_suave); */
     background-image: url('../images/backgroundWeb.jpg');
     position: absolute;
     top: var(--altura_header);
@@ -112,6 +112,12 @@ ul {
 
 }
 
+.link a:hover {
+    color: #00ffff;
+    text-decoration: underline;
+    transition: color 0.3s, text-decoration 0.3s;
+}
+
 .logoNavbar {
     border-radius: 50%;
     height: 40px
@@ -136,7 +142,8 @@ footer {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     border-top: 1px solid #1C9DB3;
-    box-shadow: 0 4px 15px rgba(0, 255, 221, 0.3); /* Sombra suave */
+    box-shadow: 0 4px 15px rgba(0, 255, 221, 0.3);
+    /* Sombra suave */
 }
 
 .info {
@@ -185,11 +192,8 @@ footer {
 
 li a:hover {
     color: #00ffff;
-    /* Cambia a un color llamativo */
     text-decoration: underline;
-    /* Agrega subrayado */
     transition: color 0.3s, text-decoration 0.3s;
-    /* Transición suave */
 }
 
 .ubicacion {
@@ -244,7 +248,7 @@ li a:hover {
     transition: transform 0.3s ease;
 }
 
-/* Tamaño del icono */
+
 .whatsapp-button i {
     font-size: 40px;
     color: #fff;
@@ -252,38 +256,37 @@ li a:hover {
 
 .whatsapp-button:hover {
     transform: scale(1.1);
-    /* Aumenta ligeramente el tamaño */
 }
 
 /* fin whatsapp  */
 
 /* -----portada-----  */
 
-.secPortada{
+.secPortada {
     padding: 0 var(--padding_left_right);
     padding-top: var(--padinTopBottonMobile);
     padding-bottom: 35px;
 }
 
-.contenedorImg img{
+.contenedorImg img {
     display: none;
 }
 
-.contenedorPortada{}
+.contenedorPortada {}
 
-.contenedorTxt{
+.contenedorTxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-.contenedorTxt h1{
-    color: var(--color_font);
+.contenedorTxt h1 {
+    color: #29DDDA;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-.contenedorTxt p{
+.contenedorTxt p {
     color: var(--color_blancoSubT);
     text-align: justify;
     hyphens: auto;
@@ -291,7 +294,7 @@ li a:hover {
 }
 
 
-.contenedorButton{
+.contenedorButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -299,51 +302,279 @@ li a:hover {
     gap: 1rem;
 }
 
-.btnPortada{
+.btnPortada {
     padding: 5px 20px;
-    border: 2px solid #00ffdd; /* Color de borde */
-    border-radius: 8px; 
+    border: 2px solid #00ffdd;
+    border-radius: 8px;
     background-color: transparent;
-    color: #00ffdd; 
+    color: #00ffdd;
     font-weight: bold;
-    transition: all 0.3s ease; /* Transición suave */
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.btnPortada:hover{
-    background-color: #00ffdd; 
-    color: #1a1a1a; 
-    box-shadow: 0 4px 15px rgba(0, 255, 221, 0.3); 
-    transform: scale(1.05); /* Ligero aumento de tamaño */
+.btnPortada:hover {
+    background-color: #00ffdd;
+    color: #1a1a1a;
+    box-shadow: 0 4px 15px rgba(0, 255, 221, 0.3);
+    transform: scale(1.05);
+    /
 }
 
 
-/* fin porta  */
+/* fin portada  */
 
 
 
+/* mi visión  */
+
+.secMivision {
+
+    padding: var(--padinTopBottonMobile) var(--padding_left_right);
+}
+
+.secMivision h2 {
+    color: #29DDDA;
+    padding-bottom: 1.5rem;
+    text-align: center;
+}
+
+.secMivision h3 {
+    color: var(--color_font);
+    padding-bottom: 0.5rem;
+    text-align: center;
+}
+
+.secMivision p {
+    color: var(--color_blancoSubT);
+    text-align: justify;
+    hyphens: auto;
+    margin-bottom: 1.5rem;
+}
+
+.contenedorMiVision {}
+
+.contImgVision {
+    display: none;
+}
+
+.contInfo {}
+
+.infoDosColum {}
+
+.infoVal {
+    border: 2px solid;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 255, 221, 0.3);
+}
+
+.infoVal:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 255, 221, 0.3);
+}
+
+#infoVerde {
+    border-color: #16FFBB;
+}
+
+#infoCian {
+    border-color: #29DDDA;
+}
+
+.infoCreatividad {
+    border: 2px solid #37A7E7;
+    margin-bottom: 1rem;
+    padding: 10px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 255, 221, 0.3);
+}
+
+.infoCreatividad:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 255, 221, 0.3);
+}
 
 
+/* experiencia  */
+
+.secExperiencia {
+    color: #fff;
+    padding: var(--padinTopBottonMobile) var(--padding_left_right);
+}
+
+.secExperiencia h2 {
+    margin-bottom: 1rem;
+}
+
+.contenedorGenerarExp {
+    margin-top: 1rem;
+}
+
+.infoExp {
+    padding-bottom: 1rem;
+
+}
+
+.infoExp h3 {
+    margin-bottom: 0.5rem;
+}
+
+.infoExp ul li i {
+    font-size: 20px;
+    color: #00FFFF;
+    margin-right: 5px;
+}
+
+/* efecto escritura js  */
+.typing {
+    font-size: 24px;
+    font-weight: bold;
+    color: #29DDDA;
+    border-right: 2px solid #37A7E7;
+    /* Simula el cursor */
+    animation: blink 0.7s infinite;
+    min-height: 3rem;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #37A7E7;
+    }
+}
 
 
+/* servicios  */
+
+.secServicios {
+    padding: var(--padinTopBottonMobile) var(--padding_left_right);
+}
+
+.secServicios h2 {
+    color: #37A7E7;
+    margin-bottom: 1.5rem;
+}
 
 
+.card-servicio {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    border-right: 2px dashed #00ffdd;
+}
 
+.icono-circulo {
+    padding-left: 0.3rem;
+    border-left: 2px solid #00ffdd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00ffdd;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
+.contenido h3 {
+    margin: 0;
+    font-weight: 700;
+    color: #fff;
+}
+
+.contenido p {
+    margin: 0;
+    color: #ccc;
+}
 
 
 
 /* •---------------------RESPONSIVE MOBILE FRIST---------------------• */
 
 @media (min-width: 576px) {
-    .contenedorButton{
+
+    /* portada  */
+
+    .secPortada {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .contenedorButton {
         flex-direction: row;
     }
+
+
+    /* mi visión  */
+
+    .secMivision h2 {
+        margin-bottom: 2rem;
+    }
+
+    .secMivision h3 {
+        padding-top: 2rem;
+    }
+
+    .secMivision p {
+        padding: 10px;
+    }
+
+    .infoVal {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+        padding: 0 var(--padding_left_right);
+    }
+
+    .infoCreatividad {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 3rem;
+        padding: 0 var(--padding_left_right);
+    }
+
+    /* experiencia  */
+
+    .secExperiencia {
+        color: #fff;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+
+    .contenedorGenerarExp {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+    }
+
+
+    /* servicios  */
+
+    .secServicios {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+
+
 
 }
 
 
 @media (min-width:768px) {
+    * {
+        font-size: 16px;
+    }
+
     #liInicio {
         margin-top: 0;
     }
@@ -369,10 +600,6 @@ li a:hover {
         padding: .2rem .7rem;
     }
 
-    .link:hover {
-        color: #C2163E;
-    }
-
     /* footer  */
     footer {
         padding-left: 5rem;
@@ -381,34 +608,78 @@ li a:hover {
 
     /* portada  */
 
-    .contenedorImg img{
+    .secPortada {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .secPortada h1 {
+        font-size: 1.5rem;
+    }
+
+    .contenedorImg img {
         display: block;
     }
 
-    .contenedorPortada{
+    .contenedorPortada {
         display: grid;
         grid-template-columns: 2fr 1fr;
     }
 
-    .contenedorImg{
+    .contenedorImg {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    .contenedorImg img{
+    .contenedorImg img {
         width: 100%;
-        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra difusa suave */
-        border-radius: 8px; /* Bordes redondeados opcionales */
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+
     }
-    
-    .contenedorTxt{
+
+    .contenedorTxt {
         padding-right: var(--padinTopBottonMobile);
     }
 
-    .contenedorButton{
+    .contenedorTxt h1 {
+        text-align: left;
+    }
+
+    .contenedorButton {
         justify-content: left;
+    }
+
+    /* mi visión  */
+
+
+
+    .contImgVision img {
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .infoDosColum {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* experiencia  */
+
+
+    .secMivision h2 {
+        font-size: 24px;
+    }
+
+    /* servicios  */
+
+    .secServicios {}
+
+    .secServicios h2 {
+        font-size: 24px;
     }
 
 }
@@ -427,27 +698,173 @@ li a:hover {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* portada  */
+
+    .secPortada h1 {
+        font-size: 30px;
+    }
+
+    /* mi visión  */
+
+    .secMivision h2 {
+        font-size: 28px;
+    }
 
 
+    .contenedorMiVision {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
 
+    .contImgVision {
+        background-image: url('../images/backgroundImgVision.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+    }
+
+    .infoVal {
+        margin: 0 1rem;
+        margin-bottom: 2rem;
+        padding: 0 10px;
+    }
+
+    .infoVal h3 {
+        padding: 1rem;
+    }
+
+    .infoCreatividad {
+        margin: 0 1rem;
+        margin-bottom: 2rem;
+        padding: 0 10px;
+
+    }
+
+    .infoCreatividad h3 {
+        padding: 1rem;
+    }
+
+    /* experiencia  */
+
+    .typing {
+        font-size: 28px;
+    }
+
+
+    /* servicios  */
+
+    .secServicios h2 {
+        font-size: 28px;
+    }
 
 }
 
 @media (min-width: 1200px) {
 
-    /* protada  */
-    .contenedorTxt h1{
-        text-align: left;
-        font-size: 40px;
+    * {
+        font-size: 20px;
     }
+
+    /* protada  */
+
+    .secPortada {
+        padding: 2.5rem 5rem;
+    }
+
+    .contenedorTxt h1 {
+        text-align: left;
+        font-size: 45px;
+    }
+
+
+    /* mi visión  */
+    .secMivision {
+        padding: 2.5rem 5rem;
+
+    }
+
+    .secMivision h2 {
+        font-size: 35px;
+    }
+
+
+    /* experiencia  */
+
+    .secExperiencia {
+        padding: 2.5rem 5rem;
+    }
+
+    .typing{
+        font-size: 35px;
+    }
+
+    /* servicios  */
+
+    .secServicios {
+        padding: 2.5rem 5rem;
+    }
+
+    .secServicios h2 {
+        font-size: 35px;
+    }
+
 }
 
 @media (min-width: 1600px) {
 
     * {
-        font-size: 24px;
+        font-size: 22px;
     }
 
+    /* navbar  */
+    .logoNavbar {
+        height: 60px;
+    }
+
+
     /* portada  */
+
+    .secPortada {
+        padding: 3rem 8rem;
+    }
+
+    .contenedorTxt h1 {
+        text-align: left;
+        font-size: 60px;
+    }
+
+
+    /* mi visión  */
+    .secMivision {
+        padding: 3rem 8rem;
+    }
+
+    .secMivision h2 {
+        font-size: 50px;
+    }
+
+    /* experiencia  */
+
+    .secExperiencia {
+        padding: 3rem 8rem;
+    }
+
+    .typing{
+        font-size: 50px;
+    }
+
+    /* servicios  */
+
+    .secServicios {
+        padding: 3rem 8rem;
+    }
+
+    .secServicios h2 {
+        font-size: 50px;
+    }
 
 }

@@ -41,6 +41,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- iconos lenguajes  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+
     <!-- Datos estructurados JSON-LD -->
     <script type="application/ld+json">
         {
@@ -61,13 +66,13 @@
             }
         }
         </script>
+
+
 </head>
 
 <header class="header">
     <nav class="navbar">
         <a href="#"><img src="images/faviconLogo/logo.png" alt="logo" class="logoNavbar"></a>
-        <!-- <a href="#"><i class="fa fa-cubes " aria-hidden="true"></i></a> -->
-
         <label class="labe_hamburguesa" for="menu_hamburguesa">
             <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="list_icon"
                 viewBox="0 0 16 16">
@@ -80,10 +85,10 @@
 
         <ul class="ul_links">
             <li class="li_links" id="liInicio">
-                <a href="#" class="link">Conóceme</a>
+                <a href="#conoceme" class="link">Conóceme</a>
             </li>
             <li class="li_links" for="menu_hamburguesa">
-                <a href="#" class="link">Servicios</a>
+                <a href="#servicios" class="link">Servicios</a>
             </li>
             <li class="li_links">
                 <a href="#" class="link">Testimonios</a>
@@ -98,18 +103,19 @@
 
 <!-- ----------portada---------- -->
 
-
 <section class="secPortada">
     <div class="contenedorPortada">
         <div class="contenedorTxt">
             <h1>INNOVACIÓN Y CREATIVIDAD EN CADA PROYECTO</h1>
-            <p>Desarrollando webs que impulsan tu presencia digital y ofrecen soluciones únicas. En Senestrari Dev, me
+            <p>Desarrollando webs que impulsan tu presencia digital y ofrecen soluciones únicas. En
+                <strong>SenestrariDev</strong>, me
                 dedico a crear experiencias web atractivas y funcionales con tecnologías como HTML, CSS, JavaScript y
                 React. Mi objetivo es destacar tu marca y hacerla crecer en el entorno digital con un enfoque de calidad
-                y compromiso.</p>
+                y compromiso.
+            </p>
             <div class="contenedorButton">
-                <button class="btnPortada">Conocer mis servicios</button>
-                <button class="btnPortada">Contáctame</button>
+                <a href="#servicios"><button class="btnPortada" >Conocer mis servicios</button></a>
+                <a href="#contacto"><button class="btnPortada">Contáctame</button></a>
 
             </div>
         </div>
@@ -119,9 +125,151 @@
     </div>
 </section>
 
+<!-- ----------Mi-Visión---------- -->
+
+<section class="secMivision" id="conoceme">
+    <h2>SOBRE MÍ Y MI VISIÓN</h2>
+    <div class="contenedorMiVision">
+        <div class="contImgVision">
+
+            <img src="images/yo.jpeg"
+                alt="Retrato de Agustin Senestrari apasionado desarrollador web, simbolizando dedicación y creatividad en tecnología">
+        </div>
+        <div class="contGenText">
+            <div class="contInfo">
+                <div class="infoDosColum">
+                    <div class="infoVal" id="infoVerde">
+                        <h3>PASIÓN POR LA TECNOLOGÍA</h3>
+                        <p>La tecnología es el motor de mi vocación. Me apasiona desarrollar soluciones web que no solo
+                            resuelvan desafíos técnicos, sino que también inspiren y generen un impacto positivo. Cada
+                            proyecto es una oportunidad para innovar y aplicar mis conocimientos con dedicación y
+                            creatividad</p>
+                    </div>
+                    <div class="infoVal" id="infoCian">
+                        <h3>APRENDIZAJE CONTINUO</h3>
+                        <p>Estoy comprometido con el crecimiento constante. Mi enfoque es actualizar y ampliar mis
+                            habilidades de forma continua, dominando nuevas tecnologías y tendencias para asegurar que
+                            cada proyecto esté a la vanguardia y sea de la más alta calidad.</p>
+                    </div>
+                </div>
+                <div class="infoCreatividad">
+                    <h3>COLABORACIÓN Y CREATIVIDAD</h3>
+                    <p>Creo en el poder de la colaboración como un impulsor clave para alcanzar resultados
+                        excepcionales. La creatividad es mi recurso más valioso, permitiéndome abordar los retos con
+                        ideas frescas e innovadoras, garantizando soluciones únicas y efectivas que potencian el
+                        desarrollo de cada proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----------Experiencia---------- -->
+
+<section class="secExperiencia">
+    <div id="typing" class="typing"></div>
+    <div class="contenedorGenerarExp">
+        <div class="infoExp">
+            <h3>FROND-END</h3>
+            <ul>
+                <li><i class="devicon-javascript-plain"></i> JavaScript</li>
+                <li><i class="devicon-html5-plain"></i> HTML</li>
+                <li><i class="devicon-css3-plain"></i> CSS</li>
+                <li><i class="devicon-react-original"></i> React.js</li>
+            </ul>
+        </div>
+        <div class="infoExp">
+            <h3>BACK-END</h3>
+            <ul>
+                <li><i class="devicon-nodejs-plain"></i> Node.js</li>
+                <li><i class="devicon-denojs-original"></i> Deno</li>
+                <li><i class="devicon-mongodb-plain"></i> MongoDB</li>
+                <li><i class="devicon-mysql-plain"></i> MySQL</li>
+            </ul>
+        </div>
+        <div class="infoExp">
+            <h3>TECNOLOGÍAS</h3>
+            <ul>
+                <li><i class="devicon-express-original"></i> Express</li>
+                <li><i class="fas fa-code"></i> EJS</li>
+                <li><i class="devicon-typescript-plain"></i> TypeScript</li>
+                <li><i class="fab fa-wordpress"></i> WordPress</li>
+            </ul>
+        </div>
+    </div>
+
+</section>
+
+<!-- ----------Servicios---------- -->
+
+<section class="secServicios" id="servicios">
+    <h2>CÓMO PUEDO AYUDARTE</h2>
+    <div class="contenedorGenServicios">
+        <div class="card-servicio">
+            <div class="icono-circulo">
+                <span>1</span>
+            </div>
+            <div class="contenido">
+                <h3>DESARROLLO WEB PERSONALIZADO</h3>
+                <p>Sitios web a medida, desde páginas de marketing y landing pages hasta sitios de una sola página,
+                    diseñados para cumplir con tus objetivos específicos.</p>
+            </div>
+        </div>
+        <div class="card-servicio">
+            <div class="icono-circulo">
+                <span>2</span>
+            </div>
+            <div class="contenido">
+                <h3>APLICACIONES WEB</h3>
+                <p>Creación de aplicaciones interactivas y funcionales, adaptadas a las necesidades de tu negocio.</p>
+            </div>
+        </div>
+        <div class="card-servicio">
+            <div class="icono-circulo">
+                <span>3</span>
+            </div>
+            <div class="contenido">
+                <h3>DESARROLLO CON WORDPRESS</h3>
+                <p>Diseño y personalización de sitios usando WordPress, con un enfoque en flexibilidad y facilidad de
+                    gestión.</p>
+            </div>
+        </div>
+        <div class="card-servicio">
+            <div class="icono-circulo">
+                <span>4</span>
+            </div>
+            <div class="contenido">
+                <h3>DISEÑO RESPONSIVE</h3>
+                <p>Aseguro que tus sitios se adapten perfectamente a todos los dispositivos, ofreciendo una experiencia
+                    de usuario impecable.</p>
+            </div>
+        </div>
+        <div class="card-servicio">
+            <div class="icono-circulo">
+                <span>5</span>
+            </div>
+            <div class="contenido">
+                <h3>OPTIMIZACIÓN DE RENDIMIENTO WEB</h3>
+                <p>Mejora la velocidad y el rendimiento de tu sitio web para una experiencia de usuario ágil y mejor
+                    SEO. Incluye optimización de imágenes, minificación de archivos y reducción de tiempos de carga.</p>
+            </div>
+        </div>
+        <div class="card-servicio">
+            <div class="icono-circulo">
+                <span>6</span>
+            </div>
+            <div class="contenido">
+                <h3>SOPORTE Y MANTENIMIENTO DE WORDPRESS</h3>
+                <p>Actualización y optimización para asegurar un funcionamiento estable y seguro de tu sitio.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 <!-- boton whatsapp  -->
 
-<a href="https://wa.me/521XXXXXXXXXX" class="whatsapp-button" target="_blank">
+<a href="https://wa.me/3513893394" class="whatsapp-button" target="_blank">
     <i class="fa fa-whatsapp" aria-hidden="true"></i>
 </a>
 
@@ -129,7 +277,7 @@
 <!-- seccion footer  -->
 
 <div class="contenedorFooter">
-    
+
     <footer>
         <div class="info">
             <h3>Mi Filosofía de Trabajo</h3>
@@ -168,6 +316,7 @@
 
 <!-- ----------Scripts---------- -->
 
+<script src="js/experiencia.js"></script>
 <script src="js/navBar.js"></script>
 <script src="https://kit.fontawesome.com/a720cb8047.js" crossorigin="anonymous"></script>
 
