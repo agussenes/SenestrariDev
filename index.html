@@ -66,6 +66,9 @@
             }
         }
         </script>
+        
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 
 
 </head>
@@ -91,10 +94,10 @@
                 <a href="#servicios" class="link">Servicios</a>
             </li>
             <li class="li_links">
-                <a href="#" class="link">Testimonios</a>
+                <a href="#testimoniales" class="link">Testimonios</a>
             </li>
             <li class="li_links">
-                <a href="#" class="link">Contáctame</a>
+                <a href="#contacto" class="link">Contáctame</a>
             </li>
         </ul>
 
@@ -131,9 +134,22 @@
     <h2>SOBRE MÍ Y MI VISIÓN</h2>
     <div class="contenedorMiVision">
         <div class="contImgVision">
-
             <img src="images/yo.jpeg"
-                alt="Retrato de Agustin Senestrari apasionado desarrollador web, simbolizando dedicación y creatividad en tecnología">
+                alt="Retrato de Agustín Senestrari apasionado desarrollador web, simbolizando dedicación y creatividad en tecnología"
+                class="imagen-principal">
+
+            <div class="info-hover">
+                <h3>Agustín Ezequiel Senestrari</h3>
+                <p><strong>Último Proyecto:</strong> UnenGroup<br> <strong>Visítalo:</strong> <a
+                        href="https://unengroup.com" target="_blank" style="color: #00ffcc;">unengroup.com</a></p>
+                <h4><strong>Estudios:</strong></h4>
+                <ul>
+                    <li>Programador Web Junior - UTN Bs As - 2024</li>
+                    <li>Diplomatura en Programación Web Full Stack - UTN (en curso, 2024)</li>
+                    <li>WordPress, JavaScript, React.js - Coder House (2023)</li>
+                </ul>
+                <a href="#contacto"><button class="contact-button">Contáctame</button></a>
+            </div>
         </div>
         <div class="contGenText">
             <div class="contInfo">
@@ -268,46 +284,100 @@
 
 <!-- ----------Testimoniales---------- -->
 
-<section class="secTestimoniales">
+<section class="secTestimoniales" id="testimoniales">
     <h2>EXPERIENCIAS DE CLIENTES</h2>
     <div class="testimonial-container">
         <div class="testimonial-slide active">
             <img src="images/faviconLogo/logo.png" class="testimonial-logo">
-            <h4>Juan Pérez</h4>
-            <p>“Estoy muy satisfecho con el trabajo de [Tu Nombre]. Su profesionalidad y atención al detalle superaron
-                mis expectativas.”</p>
-                <div class="contenedorButtonTe">
-                    <a href="#contacto"><button class="btnPortada">Ver web</button></a>
-                </div>
+            <h4>UnenGroup</h4>
+            <p>“Trabajar con Agustin ha sido una experiencia excepcional. Su enfoque en la precisión y dedicación ayudó a que nuestra plataforma inmobiliaria destacara por su diseño moderno y funcionalidad impecable.”</p>
+            <div class="contenedorButtonTe">
+                <a href="#contacto"><button class="btnPortada">Ver web</button></a>
+            </div>
         </div>
         <div class="testimonial-slide">
-            <img src="images/faviconLogo/logo.png" alt="Logo de María Rodríguez" class="testimonial-logo">
-            <h4>María Rodríguez</h4>
-            <p>“El sitio web que desarrolló [Tu Nombre] para mi empresa es impresionante. Es moderno, funcional y ha
-                mejorado significativamente nuestro alcance en línea.”</p>
-                <div class="contenedorButtonTe">
-                    <a href="#contacto"><button class="btnPortada">Ver web</button></a>
-                </div>
+            <img src="images/faviconLogo/logo.png" alt="Logo de Ramenfactory" class="testimonial-logo">
+            <h4>Ramenfactory</h4>
+            <p>“El sitio web desarrollado por Agustin transformó nuestra presencia en línea. Capturó a la perfección la esencia de nuestro local de ramen y brindó a nuestros clientes una experiencia atractiva y sencilla.”</p>
+            <div class="contenedorButtonTe">
+                <a href="inovandodes.com"><button class="btnPortada">Ver web</button></a>
+            </div>
         </div>
         <div class="testimonial-slide">
-            <img src="images/faviconLogo/logo.png" alt="Logo de Pedro González" class="testimonial-logo">
-            <h4>Pedro González</h4>
-            <p>“Recomiendo encarecidamente los servicios de [Tu Nombre]. Su compromiso con la calidad y la innovación es
-                excepcional.”</p>
-                <div class="contenedorButtonTe">
-                    <a href="#contacto"><button class="btnPortada">Ver web</button></a>
-                </div>
+            <img src="images/faviconLogo/logo.png" alt="Logo de Rocio Fidalgo" class="testimonial-logo">
+            <h4>Rocio Fidalgo</h4>
+            <p>“Gracias a Agustin, mi plataforma de venta de planes y rutinas deportivas ahora es intuitiva y confiable. Ha mejorado la forma en que mis clientes interactúan y adquieren mis servicios, simplificando su experiencia de usuario.”</p>
+            <div class="contenedorButtonTe">
+                <a href="#contacto"><button class="btnPortada">Ver web</button></a>
+            </div>
         </div>
-        
     </div>
-   
 
+    
+
+    <div class="dots-container"></div>
 </section>
-
 
 <!-- ----------Contacto---------- -->
 
-
+<section class="secContacto" id="contacto">
+    <div class="contenedorGenCotnacto">
+       
+        <div class="contenedorForm">
+            <h2>DEJAME TU  MENSAJE Y TE CONTACTO!</h2>
+            <form id="formulario" class="formulario">
+                <div class="campo">
+                    <label for="asunto">Nombre completo:</label>
+                    <input type="text" id="asunto" name="asunto" placeholder="Ingresa tu nombre completo" required>
+                </div>
+            
+                <div class="campo">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="Ingresa tu email" required>
+                </div>
+            
+                <div class="campo">
+                    <label for="telefono">Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ingresa tu número de teléfono" required>
+                </div>
+            
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+            
+                <div class="g-recaptcha" data-sitekey="6Le7S3YqAAAAAJtSLfo2hv2P2G7h7HmoLfiH_D8N"></div> <!-- Añade tu clave del sitio -->
+                
+                <div class="acciones">
+                    <button type="submit" class="btn-enviar"><i class="fa fa-paper-plane" aria-hidden="true"></i> Enviar</button>
+                    <button type="reset" class="btn-reset"><i class="fa fa-undo" aria-hidden="true"></i> Restablecer</button>
+                </div>
+            
+                <div id="spinner" class="spinner" style="display: none;"></div>
+            </form>
+            
+        </div>
+        <div class="contenedorImgyRedes">
+            <div class="redesSoc">
+                <h2>SEGUIME</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com/agussenestrari/"><i class="fa fa-instagram"></i>
+                            Instagram</a>
+                    </li>
+                    <li><a href="https://www.linkedin.com/in/agustin-senestrari/"><i class="fa fa-linkedin"></i>
+                            LinkedIn</a></li>
+                    <li><a href="https://github.com/agussenes"><i class="fa fa-github"></i> GitHub</a></li>
+                </ul>
+            </div>
+            <div class="contenedorImgContacto">
+                <img src="images/fotoContacto.webp"
+                alt="Desarrollador web escribiendo código en laptop con iconos de tecnologías como JavaScript, React.js, Node.js, TypeScript, MySQL y MongoDB - Senestrari Dev">
+        
+            </div>
+           
+        </div>
+    </div>
+</section>
 
 <!-- boton whatsapp  -->
 
@@ -341,9 +411,11 @@
         <div class="ubicacion">
             <h3>Seguime</h3>
             <ul>
-                <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
-                <li><a href="#"><i class="fa fa-linkedin"></i> LinkedIn</a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                <li><a href="https://www.instagram.com/agussenestrari/"><i class="fa fa-instagram"></i> Instagram</a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/agustin-senestrari/"><i class="fa fa-linkedin"></i>
+                        LinkedIn</a></li>
+                <li><a href="https://github.com/agussenes"><i class="fa fa-github"></i> GitHub</a></li>
             </ul>
         </div>
     </footer>
@@ -358,6 +430,9 @@
 
 <!-- ----------Scripts---------- -->
 
+<!--<script src="js/envioDrive.js"></script>-->
+<script src="js/validacionFrondForm.js"></script>
+<script src="js/hoverInfoPer.js"></script>
 <script src="js/testimoniales.js"></script>
 <script src="js/experiencia.js"></script>
 <script src="js/navBar.js"></script>
